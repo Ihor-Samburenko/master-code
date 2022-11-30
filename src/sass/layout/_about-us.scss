@@ -29,7 +29,6 @@
       background-image: url(../images/about/about-1_2560@2x.jpg);
     }
   }
-
 }
 .section-aboutus__transparent {
   background: $light-color-with-opacity;
@@ -94,8 +93,42 @@
     width: 235px;
   }
 }
-.section-aboutus__icon {
+
+.section-aboutus__description.case::before {
+  content:' ';
+  width: 32px;
+  height: 32px;
   margin-bottom: 24px;
+  display: block;
+  background-image: url(../images/icon/case.png);
+  background-repeat: no-repeat;
+}
+.section-aboutus__description.diagrama::before {
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+  display: block;
+  background-image: url(../images/icon/diagram.png);
+  background-repeat: no-repeat;
+}
+.section-aboutus__description.home::before {
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+  display: block;
+  background-image: url(../images/icon/home.png);
+  background-repeat: no-repeat;
+}
+.section-aboutus__description.awards::before {
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+  display: block;
+  background-image: url(../images/icon/awards.png);
+  background-repeat: no-repeat;
 }
 .section-aboutus__description {
   font-weight: 400;
