@@ -1,3 +1,9 @@
+// utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
 // base
 @import './base/reset';
 @import './base/modern-normalize';
@@ -19,9 +25,3 @@
 @import './layout/header';
 @import './layout/hero';
 @import './layout/infrastructure';
-
-// utils
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
