@@ -1,0 +1,116 @@
+
+.section-aboutus__background {
+  background-image: url(../images/about/about-1_320@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 677px;
+ 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-1_640@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/about/about-1_768@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-1_1536@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/about-1_1280@1x.jpg);
+    height: 630px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-1_2560@2x.jpg);
+    }
+  }
+
+}
+.section-aboutus__transparent {
+  background: $light-color-with-opacity;
+}
+.section-aboutus__group {
+  @include flex($horizontal:space-between, $vertical: null);
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.section-aboutus {
+  background: $pop-up-bcg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-aboutus__list {
+
+  @include flex($horizontal:null, $vertical:null);
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 336px;
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 534px;
+    gap: 64px;
+  }
+}
+.section-aboutus__item {
+  width: 130px;
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 235px;
+  }
+}
+.section-aboutus__icon {
+  margin-bottom: 24px;
+}
+.section-aboutus__description {
+  font-weight: 400;
+}
+.section-aboutus__roster {
+  width: 292px;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 390px;
+  }
+}
+.section-aboutus__title {
+  margin-bottom: 8px;
+  font-weight: 300;
+  color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+}
+.section-aboutus__translation {
+
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+}
