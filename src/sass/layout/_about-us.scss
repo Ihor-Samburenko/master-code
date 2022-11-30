@@ -33,6 +33,7 @@
 }
 .section-aboutus__transparent {
   background: $light-color-with-opacity;
+ 
 }
 .section-aboutus__group {
   @include flex($horizontal:space-between, $vertical: null);
@@ -40,17 +41,29 @@
   gap: 32px;
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 1012px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+    @media screen and (min-width: 1280px) {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
 }
 
 .section-aboutus {
   background: $pop-up-bcg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    
 }
 .section-aboutus__list {
 
@@ -65,6 +78,7 @@
     margin-right: 0;
     width: 336px;
     gap: 32px;
+
   }
   @media screen and (min-width: 1280px) {
     width: 534px;
@@ -85,6 +99,7 @@
 }
 .section-aboutus__description {
   font-weight: 400;
+  line-height: 1.5;
 }
 .section-aboutus__roster {
   width: 292px;
@@ -102,13 +117,14 @@
   margin-bottom: 8px;
   font-weight: 300;
   color: $secondary-text-color;
+  line-height: 1.5;
   @media screen and (min-width: 768px) {
       margin-bottom: 16px;
       font-size: 24px;
     }
 }
 .section-aboutus__translation {
-
+  line-height: 1.1;
   font-size: 12px;
   @media screen and (min-width: 768px) {
       font-size: 16px;
