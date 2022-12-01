@@ -91,6 +91,16 @@
     line-height: calc(21 / 14);
     color: rgba(255, 255, 255, 0.6);
 
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/images/arcticons_map.svg');
+        background-size: contain;
+        stroke: black;
+    }
+
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: calc(24 / 16);
@@ -98,15 +108,15 @@
     
 }
 
-.contacts-group__icon {
-    width: 24px;
-    height: 24px;
+// .contacts-group__icon {
+//     width: 24px;
+//     height: 24px;
 
-    margin-right: 8px;
+//     margin-right: 8px;
 
-    stroke: $white-color;
-    fill: transparent;
-}
+//     stroke: $white-color;
+//     fill: transparent;
+// }
 
 .contacts-group__btn {
     display: block;
