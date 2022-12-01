@@ -30,7 +30,7 @@
   }
 }
 .section-aboutus__transparent {
-  background: $light-color-with-opacity;
+  background-color: $light-color-with-opacity;
 }
 .section-aboutus__group {
   @include flex($horizontal: space-between, $vertical: null);
@@ -64,10 +64,10 @@
 .section-aboutus__list {
   @include flex($horizontal: null, $vertical: null);
   flex-wrap: wrap;
-  margin-left: auto;
+
   margin-right: auto;
   gap: 20px;
-  width: 280px;
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
     margin-right: 0;
@@ -130,8 +130,8 @@
   line-height: 1.5;
 }
 .section-aboutus__roster {
-  width: 292px;
-  margin: auto;
+
+
   @media screen and (min-width: 768px) {
     width: 336px;
     margin-left: 0;
