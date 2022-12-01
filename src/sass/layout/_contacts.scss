@@ -41,7 +41,6 @@
 
 .contacts-group__wrapper {
     width: 280px;
-    // height: 218px;
 
     padding: 24px 20px;
     margin-right: auto;
@@ -52,7 +51,8 @@
 
     @media screen and (min-width: 768px) {
         width: 704px;
-        // height: 226px;
+
+        @include flex ($horizontal: null);
 
         padding: 53px 74px;
     }
@@ -68,21 +68,33 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 22px;
     }
-}
-
-.contacts-group__list {
-    @include flex ($vertical: null);
-    flex-direction: column;
-    gap: 14px;
 
     @media screen and (min-width: 768px) {
-        width: 24px;
+        margin-right: 68px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 64px;
     }
 }
 
-// .contacts-group__item {
-
+// .contacts-group__list {
+  
 // }
+
+.contacts-group__item {
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+}
 
 .contacts-group__link {
     @include flex ($horizontal: null);
@@ -91,16 +103,6 @@
     line-height: calc(21 / 14);
     color: rgba(255, 255, 255, 0.6);
 
-    &::before {
-        content: '';
-        display: block;
-        width: 24px;
-        height: 24px;
-        background-image: url('/src/images/arcticons_map.svg');
-        background-size: contain;
-        stroke: black;
-    }
-
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: calc(24 / 16);
@@ -108,15 +110,47 @@
     
 }
 
-// .contacts-group__icon {
-//     width: 24px;
-//     height: 24px;
+.contacts-group__link-street {
+     &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-image: url('/src/images/icon/arcticons_map.svg');
+        background-size: contain;
+        stroke: $white-color;
+        fill: transparent;
+    }
+}
 
-//     margin-right: 8px;
+.contacts-group__link-email {
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-image: url('/src/images/icon/arcticons_spike-email.svg');
+        background-size: contain;
+        stroke: $white-color;
+        fill: transparent;
+    }
+}
 
-//     stroke: $white-color;
-//     fill: transparent;
-// }
+.contacts-group__link-tel {
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-image: url('/src/images/icon/arcticons_phone.svg');
+        background-size: contain;
+        stroke: $white-color;
+        fill: transparent;
+    }
+}
 
 .contacts-group__btn {
     display: block;
@@ -130,11 +164,13 @@
     font-size: 16px;
     line-height: calc(24 / 16);
     
-    color: $secondary-text-color;
+    color: $primary-text-color;
 
     background-color: $light-color;
     border: none;
     border-radius: 8px;
+
+    cursor: pointer;
 
     @media screen and (min-width: 768px) {
         padding: 9px 46px;
