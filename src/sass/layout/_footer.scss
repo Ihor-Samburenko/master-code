@@ -2,7 +2,7 @@
     padding-top: 20px;
     padding-bottom: 8px;
 
-    background-color: grey;
+    background-image: linear-gradient(269.46deg, #2D2A22 20.66%, #7E6D53 85.22%);
 
     @media screen and (min-width: 768px) {
         padding-top: 32px;
@@ -54,8 +54,8 @@
 .footer__nav-title {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    font-size: 18px;
+    line-height: calc(22 / 18);
 
     color: $white-color;
 
@@ -104,8 +104,8 @@
 .footer__contacts-title {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    font-size: 18px;
+    line-height: calc(22 / 18);
 
     color: $white-color;
 
@@ -148,11 +148,18 @@
     display: flex;
     gap: 20px;
 
-    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
 
     @media screen and (min-width: 768px) {
         flex-direction: column;
     }
+
+    @media screen and (min-width: 1280px) {
+        gap: 30px;
+    }
+
 }
 
 // .footer__socials-item {
