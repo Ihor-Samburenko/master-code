@@ -39,6 +39,8 @@
 
     transform: translateX(100%);
 
+    @include transition (transform);
+
     &.is-open {
         transform: translateX(0);
     }
