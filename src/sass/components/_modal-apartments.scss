@@ -1,0 +1,145 @@
+.modal-apartments {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    padding: 32px 40px;
+    width: 320px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 571px;
+    }
+}
+
+.modal-apartments__btn-cross {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    cursor: pointer;
+}
+
+
+.modal-apartments__title {
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+    
+    color: $secondary-text-color;
+}
+
+.modal-apartments__box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.modal-apartments__image {
+    margin-right: auto;
+    margin-bottom: 22px;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+.modal-apartments__total-area{
+    margin-bottom: 4px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: $secondary-text-color;
+}
+
+.modal-apartments__rooms {
+    margin-bottom: 12px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: $secondary-text-color;
+}
+
+.modal-apartments__value {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: $primary-text-color;
+}
+
+.modal-apartments__price {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: $primary-text-color;
+}
+
+.modal-apartments__total-price {
+    margin-bottom: 26px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: $secondary-text-color;  
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 18px;
+    }
+}
+
+.modal-apartments__btn {
+    padding: 12px 52px;
+    width: 194px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $light-color;
+
+    background-color: $primary-text-color;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition-property: color, background-color, border;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active {
+        color: $secondary-text-color;
+        background-color: $light-color;
+        border: 1px solid $primary-text-color;
+    }
+}
