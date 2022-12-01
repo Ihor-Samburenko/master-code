@@ -172,6 +172,10 @@
 
     cursor: pointer;
 
+    @include transition (color);
+    @include transition (background-color);
+    @include transition (border);
+
     &:active {
         color: $light-color;
         background-color: $primary-text-color;
