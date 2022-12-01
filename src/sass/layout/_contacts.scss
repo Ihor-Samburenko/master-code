@@ -1,0 +1,146 @@
+.contacts-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: $primary-background-color;
+}
+
+.contacts-section__title {
+    padding-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: calc(42 / 28);
+
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+        line-height: calc(60 / 40);
+    }
+}
+
+.contacts-section__subtitle {
+    padding-bottom: 26px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 24px;
+
+        font-size: 24px;
+        line-height: calc(36 / 24);
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 20px;
+    }
+}
+
+.contacts-group__wrapper {
+    width: 280px;
+    // height: 218px;
+
+    padding: 24px 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: $primary-text-color;
+    border-radius: 16px;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        // height: 226px;
+
+        padding: 53px 74px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 700px;
+    }
+}
+
+.contacts-group__address {
+    font-style: normal;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 22px;
+    }
+}
+
+.contacts-group__list {
+    @include flex ($vertical: null);
+    flex-direction: column;
+    gap: 14px;
+
+    @media screen and (min-width: 768px) {
+        width: 24px;
+    }
+}
+
+// .contacts-group__item {
+
+// }
+
+.contacts-group__link {
+    @include flex ($horizontal: null);
+    
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    color: rgba(255, 255, 255, 0.6);
+
+    &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/images/arcticons_map.svg');
+        background-size: contain;
+        stroke: black;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: calc(24 / 16);
+    }
+    
+}
+
+// .contacts-group__icon {
+//     width: 24px;
+//     height: 24px;
+
+//     margin-right: 8px;
+
+//     stroke: $white-color;
+//     fill: transparent;
+// }
+
+.contacts-group__btn {
+    display: block;
+
+    padding: 12px 76px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    
+    color: $secondary-text-color;
+
+    background-color: $light-color;
+    border: none;
+    border-radius: 8px;
+
+    @media screen and (min-width: 768px) {
+        padding: 9px 46px;
+
+        font-size: 24px;
+        line-height: calc(36 / 24);
+    }
+
+}
