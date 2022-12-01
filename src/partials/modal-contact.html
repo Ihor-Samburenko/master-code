@@ -1,0 +1,22 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close-button" data-modal-close>
+            <svg class="modal__close-icon">
+                <use href="/src/images/icon/symbol-defs.svg#close-modal"></use>
+            </svg>
+        </button>
+
+        <strong class="modal__title">Leave your contacts and we will contact you</strong>
+
+        <form name="modal_form" class="modal-form">
+            <label for="user_name" class="label">Name</label>
+            <input type="text" name="user_name" id="user_name" placeholder="Yuliia" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Please type your name in latin letters" required class="modal-form__field">
+            <label for="user_telephone" class="label">Telephone</label>
+            <input type="tel" name="user_telephone" id="user_telephone" placeholder="+380" minlength="11" maxlength="11" pattern="^1,2,3,4,5,6,7,8,9,0,+$" title="Please include only numbers." required class="modal-form__field">
+            <label for="user_email" class="label">Email</label>
+            <input type="email" name="user_email" id="user_email" placeholder="Contact@gmail.com" pattern="^[a-zA-Z]+\s[a-zA-Z]+@+$" title="Please type your email" required class="modal-form__field">
+
+            <button type="submit" class="button subscribe-button">Contact us</button>
+        </form>
+    </div>
+</div>
