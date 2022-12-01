@@ -3,6 +3,9 @@
     padding-bottom: 100px;
 
     background-color: $primary-background-color;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .contacts-section__title {
