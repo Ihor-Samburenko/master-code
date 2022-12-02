@@ -243,6 +243,9 @@ img {
   background-image: linear-gradient(336.93deg, #2D2A22 5.7%, #7E6D53 108.98%);
   z-index: 999;
   transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -929,7 +932,7 @@ img {
 
 .contacts-group__btn {
   display: block;
-  padding: 12px 76px;
+  padding: 10px 74px;
   margin-right: auto;
   margin-left: auto;
   font-family: "Poppins";
@@ -941,10 +944,25 @@ img {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-group__btn:active {
+  color: #FCFCFB;
+  background-color: #7E6D53;
+  border: 1px solid #FCFCFB;
+  border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
   .contacts-group__btn {
-    padding: 9px 46px;
+    padding: 7px 44px;
     font-size: 24px;
     line-height: 1.5;
   }
@@ -1220,11 +1238,26 @@ img {
   border: 1px solid #FCFCFB;
   border-radius: 8px;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 1279px) {
   .header__btn {
     display: none;
   }
+}
+.header__btn:active {
+  color: #2D2A22;
+  background-color: #FCFCFB;
+  border: 1px solid #FCFCFB;
+  border-radius: 8px;
 }
 
 .hero {
@@ -1322,7 +1355,6 @@ img {
 .section-infrastructure {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #EDE9E3;
 }
 @media screen and (min-width: 768px) {
   .section-infrastructure {
