@@ -76,6 +76,8 @@
 .apartments__link {
     background-color: transparent;
     border: none;
+
+    cursor: pointer;
 }
 
 .apartments__image {
@@ -114,7 +116,7 @@
 .apartments__btn {
     padding: 14px 36px;
     margin: 0 auto;
-    width: 240px;
+    width: 242px;
 
     font-weight: 500;
     font-size: 18px;
@@ -122,10 +124,20 @@
     color: $light-color;
 
     background-color: $primary-text-color;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 16px;
 
     cursor: pointer;
+
+    transition-property: border, color, background-color;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active {
+        border: 1px solid $primary-text-color;
+        color: $primary-text-color;
+        background-color: $light-color;
+    }
 
     @media screen and (min-width: 768px) {
         width: 264px;
