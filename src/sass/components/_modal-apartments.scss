@@ -43,7 +43,6 @@
 
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.5;
     text-align: center;
     
     color: $secondary-text-color;
@@ -71,8 +70,7 @@
 
     font-weight: 300;
     font-size: 20px;
-    line-height: 1.5;
-
+    
     color: $secondary-text-color;
 }
 
@@ -81,16 +79,14 @@
 
     font-weight: 300;
     font-size: 20px;
-    line-height: 1.5;
-
+    
     color: $secondary-text-color;
 }
 
 .modal-apartments__value {
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
-
+    
     color: $primary-text-color;
 }
 
@@ -99,8 +95,7 @@
 
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
-
+    
     color: $primary-text-color;
 }
 
@@ -109,8 +104,7 @@
 
     font-weight: 300;
     font-size: 14px;
-    line-height: 1.5;
-
+    
     color: $secondary-text-color;  
     
     @media screen and (min-width: 768px) {
@@ -124,7 +118,7 @@
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    
     color: $light-color;
 
     background-color: $primary-text-color;
