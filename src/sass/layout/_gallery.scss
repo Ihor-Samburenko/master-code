@@ -37,7 +37,6 @@ img {
 }
 .swiper-pagination {
   margin-bottom: 20px;
-
 }
 .swiper-button-next {
   color: black;
@@ -57,9 +56,8 @@ img {
   font-weight: 500;
 }
 .swiper-slide-active img {
-  //    transform: scale(1.5);
+  transform: scale(1);
   width: 556px;
   height: 589px;
   transform: 250ms ease;
-
 }
