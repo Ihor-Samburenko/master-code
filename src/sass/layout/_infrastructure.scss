@@ -44,8 +44,9 @@
   }
 }
 .section-infrastructure__title {
-  font-size: 28px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 40px;
+
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     font-size: 40px;
@@ -95,7 +96,7 @@
   font-weight: 600;
   color: $secondary-text-color;
   font-size: 14;
-  line-height: 1.5;
+  // line-height: 1.5;
 
   @media screen and (min-width: 768px) {
     font-size: 16;

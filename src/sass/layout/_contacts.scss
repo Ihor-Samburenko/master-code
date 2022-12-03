@@ -1,193 +1,189 @@
 .contacts-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-    background-color: $primary-background-color;
+  background-color: $primary-background-color;
 }
 
 .contacts-section__title {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 
-    font-weight: 500;
-    font-size: 28px;
-    line-height: calc(42 / 28);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: calc(42 / 28);
 
-    text-align: center;
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-        font-size: 40px;
-        line-height: calc(60 / 40);
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: calc(60 / 40);
+  }
 }
 
 .contacts-section__subtitle {
-    padding-bottom: 26px;
+  padding-bottom: 26px;
 
-    font-size: 20px;
-    line-height: calc(30 / 20);
-    text-align: center;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 24px;
 
-        font-size: 24px;
-        line-height: calc(36 / 24);
-    }
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 20px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts-group__wrapper {
-    width: 280px;
+  width: 280px;
 
-    padding: 24px 20px;
-    margin-right: auto;
-    margin-left: auto;
+  padding: 24px 20px;
+  margin-right: auto;
+  margin-left: auto;
 
-    background-color: $primary-text-color;
-    border-radius: 16px;
+  background-color: $primary-text-color;
+  border-radius: 16px;
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
 
-        @include flex ($horizontal: null);
+    @include flex($horizontal: null);
 
-        padding: 53px 74px;
-    }
+    padding: 53px 74px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 700px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+  }
 }
 
 .contacts-group__address {
-    font-style: normal;
+  font-style: normal;
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 22px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 22px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-right: 68px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-right: 68px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-right: 64px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-right: 64px;
+  }
 }
 
 // .contacts-group__list {
-  
+
 // }
 
 .contacts-group__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
-        margin-bottom: 14px;
+      margin-bottom: 24px;
     }
-
-    @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-            margin-bottom: 24px;
-        }
-    }
-
+  }
 }
 
 .contacts-group__link {
-    @include flex ($horizontal: null);
-    
-    font-size: 14px;
-    line-height: calc(21 / 14);
-    color: rgba(255, 255, 255, 0.6);
+  @include flex($horizontal: null);
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: calc(24 / 16);
-    }
-    
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
 }
 
 .contacts-group__link-street {
-     &::before {
-        content: '';
-        display: block;
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        background-image: url('/src/images/icon/arcticons_map.svg');
-        background-size: contain;
-        stroke: $white-color;
-        fill: transparent;
-    }
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url('/src/images/icon/arcticons_map.svg');
+    background-size: contain;
+    stroke: $white-color;
+    fill: transparent;
+  }
 }
 
 .contacts-group__link-email {
-    &::before {
-        content: '';
-        display: block;
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        background-image: url('/src/images/icon/arcticons_spike-email.svg');
-        background-size: contain;
-        stroke: $white-color;
-        fill: transparent;
-    }
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url('/src/images/icon/arcticons_spike-email.svg');
+    background-size: contain;
+    stroke: $white-color;
+    fill: transparent;
+  }
 }
 
 .contacts-group__link-tel {
-    &::before {
-        content: '';
-        display: block;
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        background-image: url('/src/images/icon/arcticons_phone.svg');
-        background-size: contain;
-        stroke: $white-color;
-        fill: transparent;
-    }
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url('/src/images/icon/arcticons_phone.svg');
+    background-size: contain;
+    stroke: $white-color;
+    fill: transparent;
+  }
 }
 
 .contacts-group__btn {
-    display: block;
+  display: block;
 
-    padding: 10px 74px;
-    margin-right: auto;
-    margin-left: auto;
+  padding: 10px 74px;
+  margin-right: auto;
+  margin-left: auto;
 
-    font-family: 'Poppins';
-    font-weight: 300;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    
-    color: $primary-text-color;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
 
-    background-color: $light-color;
-    border: none;
+  color: $primary-text-color;
+
+  background-color: $light-color;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  @include transition(color);
+  @include transition(background-color);
+  @include transition(border);
+
+  &:active {
+    color: $light-color;
+    background-color: $primary-text-color;
+    border: 1px solid $light-color;
     border-radius: 8px;
+  }
 
-    cursor: pointer;
+  @media screen and (min-width: 768px) {
+    padding: 7px 44px;
 
-    @include transition (color);
-    @include transition (background-color);
-    @include transition (border);
-
-    &:active {
-        color: $light-color;
-        background-color: $primary-text-color;
-        border: 1px solid $light-color;
-        border-radius: 8px;
-    }
-
-    @media screen and (min-width: 768px) {
-        padding: 7px 44px;
-
-        font-size: 24px;
-        line-height: calc(36 / 24);
-    }
-
+    font-size: 24px;
+    line-height: calc(36 / 24);
+  }
 }
