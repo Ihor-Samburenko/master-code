@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,7 @@
     <include src="./partials/modal-contact.html"></include>
     <main>
       <include src="./partials/hero.html"></include>
+      <include src="./partials/mobile-menu.html"></include>
       <include src="./partials/about-us.html"></include>
       <include src="./partials/apartmants.html"></include>
       <include src="./partials/infrastructure.html"></include>
@@ -28,12 +29,21 @@
     </main>
     <!-- footer -->
     <include src="./partials/footer.html"></include>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    <!-- Modal window apartments -->
+    <include src="./partials/modal-apartments.html"></include>
+    <!-- Modal window apartments download -->
+    <include src="./partials/modal-apartments-download.html"></include>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="crossorigin="anonymous"></script>
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/gallary.js"></script>
     <script src="./js/modal-contact.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-apartments.js"></script>
+    <script src="./js/modal-apartments-download.js"></script>
   </body>
 </html>

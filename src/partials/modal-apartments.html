@@ -1,0 +1,41 @@
+<div class="backdrop is-hidden" data-modal-apartments>
+  <div class="modal-apartments">
+    <button
+      class="modal-apartments__btn-cross"
+      type="button"
+      data-modal-apartments-close
+    >
+      <svg class="modal-apartments__icon" width="32px" height="32px">
+        <use href="./images/icon/symbol-defs.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="modal-apartments__title">House 1</h2>
+    <div class="modal-apartments__box">
+      <picture class="modal-apartments__image">
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/apartments/house-1_320@1x.png 1x,
+            ./images/apartments/house-1_640@2x.png 2x
+          "
+        />
+        <img
+          class="modal-apartments__image"
+          src="./images/apartments/house-1_320@1x.png"
+          alt="Apartment planning type 1, total area 23 meters"
+        />
+      </picture>
+      <div class="modal-apartments__characteristics">
+        <p class="modal-apartments__total-area">
+          Total area: <span class="modal-apartments__value">50.2 m2</span>
+        </p>
+        <p class="modal-apartments__rooms">
+          Rooms: <span class="modal-apartments__value">1</span>
+        </p>
+        <p class="modal-apartments__price">from 1000 dol/m2</p>
+        <p class="modal-apartments__total-price">about 50 200 dollars</p>
+        <button class="modal-apartments__btn" type="submit">Contact us</button>
+      </div>
+    </div>
+  </div>
+</div>
