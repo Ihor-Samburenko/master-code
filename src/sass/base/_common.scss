@@ -5,6 +5,9 @@ body {
   line-height: 1.5;
 
   color: $primary-text-color;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 img {
