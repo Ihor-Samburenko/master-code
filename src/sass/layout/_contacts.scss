@@ -177,7 +177,8 @@
     @include transition (background-color);
     @include transition (border);
 
-    &:active {
+    &:hover,
+    &:focus {
         color: $light-color;
         background-color: $primary-text-color;
         border: 1px solid $light-color;
