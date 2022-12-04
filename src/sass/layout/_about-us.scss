@@ -1,4 +1,13 @@
-.section-aboutus__background {
+.about {
+  background: $pop-up-bcg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.about__background {
   background-image: url(../images/about/about-1_320@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,17 +38,13 @@
     }
   }
 }
-.section-aboutus__transparent {
-  background-color: $light-color-with-opacity;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.section-aboutus__group {
-  @include flex($horizontal: space-between, $vertical: null);
+.about__container {
+  position: relative;
+  @include flex($vertical: null);
   flex-wrap: wrap;
   gap: 32px;
-
-  max-width: 1012px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -48,21 +53,26 @@
     padding-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
+    gap: 112px;
     padding-top: 44px;
     padding-bottom: 44px;
   }
-}
 
-.section-aboutus {
-  background: $pop-up-bcg-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background-color: $light-color-with-opacity;
   }
 }
-.section-aboutus__list {
+.about__list {
+  position: relative;
+  z-index: 1;
   @include flex($horizontal: null, $vertical: null);
   flex-wrap: wrap;
 
@@ -80,7 +90,7 @@
     gap: 64px;
   }
 }
-.section-aboutus__item {
+.about__item {
   width: 130px;
   @media screen and (min-width: 768px) {
     width: 152px;
@@ -88,49 +98,31 @@
   @media screen and (min-width: 1280px) {
     width: 235px;
   }
+
+  &::before {
+    content: ' ';
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 24px;
+    background-repeat: no-repeat;
+  }
 }
 
-.section-aboutus__description.case::before {
-  content: ' ';
-  width: 32px;
-  height: 32px;
-  margin-bottom: 24px;
-  display: block;
-  background-image: url(../images/icon/case.png);
-  background-repeat: no-repeat;
+@each $icon in case, diagram, home, awards {
+  .about__item--#{$icon}::before {
+    background-image: url(../images/icon/#{$icon}.png);
+  }
 }
-.section-aboutus__description.diagrama::before {
-  content: ' ';
-  width: 32px;
-  height: 32px;
-  margin-bottom: 24px;
-  display: block;
-  background-image: url(../images/icon/diagram.png);
-  background-repeat: no-repeat;
-}
-.section-aboutus__description.home::before {
-  content: ' ';
-  width: 32px;
-  height: 32px;
-  margin-bottom: 24px;
-  display: block;
-  background-image: url(../images/icon/home.png);
-  background-repeat: no-repeat;
-}
-.section-aboutus__description.awards::before {
-  content: ' ';
-  width: 32px;
-  height: 32px;
-  margin-bottom: 24px;
-  display: block;
-  background-image: url(../images/icon/awards.png);
-  background-repeat: no-repeat;
-}
-.section-aboutus__description {
+
+.about__description {
   font-weight: 400;
 }
 
-.section-aboutus__roster {
+.about__roster {
+  position: relative;
+  z-index: 1;
+
   @media screen and (min-width: 768px) {
     width: 336px;
     margin-left: 0;
@@ -140,7 +132,7 @@
     width: 390px;
   }
 }
-.section-aboutus__title {
+.about__title {
   margin-bottom: 8px;
   font-weight: 300;
   color: $secondary-text-color;
@@ -150,7 +142,7 @@
     font-size: 24px;
   }
 }
-.section-aboutus__translation {
+.about__translation {
   font-size: 12px;
   @media screen and (min-width: 768px) {
     font-size: 16px;

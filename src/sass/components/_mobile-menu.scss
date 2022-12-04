@@ -1,10 +1,13 @@
 .menu-toggle {
+  margin-left: auto;
+
   min-height: 24px;
   min-width: 24px;
 
   @include flex();
 
   padding: 0;
+  margin-bottom: 30px;
 
   background-color: transparent;
   border: none;
@@ -54,9 +57,7 @@
 }
 
 .mobile-menu__list {
-  @include flex();
-
-  flex-direction: column;
+  text-align: center;
 }
 
 .mobile-menu__item {
@@ -69,7 +70,6 @@
   display: block;
 
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   color: $light-color;

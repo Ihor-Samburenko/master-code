@@ -1,12 +1,11 @@
 .apartments {
-  background-color: $light-color;
   padding-top: 24px;
   padding-bottom: 32px;
-}
+  background-color: $light-color;
 
-.apartments__container {
-  display: flex;
-  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
 }
 
 .apartments__title {
@@ -113,9 +112,10 @@
 }
 
 .apartments__btn {
+  display: block;
+  width: 242px;
   padding: 14px 36px;
   margin: 0 auto;
-  width: 242px;
 
   font-weight: 500;
   font-size: 18px;
