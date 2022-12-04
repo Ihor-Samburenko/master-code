@@ -173,16 +173,17 @@
 
   cursor: pointer;
 
-  @include transition(color);
-  @include transition(background-color);
-  @include transition(border);
+    @include transition (color);
+    @include transition (background-color);
+    @include transition (border);
 
-  &:active {
-    color: $light-color;
-    background-color: $primary-text-color;
-    border: 1px solid $light-color;
-    border-radius: 8px;
-  }
+    &:hover,
+    &:focus {
+        color: $light-color;
+        background-color: $primary-text-color;
+        border: 1px solid $light-color;
+        border-radius: 8px;
+    }
 
   @media screen and (min-width: 768px) {
     padding: 7px 44px;

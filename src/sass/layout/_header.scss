@@ -100,14 +100,14 @@
 
   cursor: pointer;
 
-  @include transition(color);
-  @include transition(background-color);
-  @include transition(border);
+    @include transition (color);
+    @include transition (background-color);
 
-  &:active {
-    color: $secondary-text-color;
-    background-color: $light-color;
-    border: 1px solid $light-color;
-    border-radius: 8px;
-  }
+    &:hover,
+    &:focus {
+        color: $secondary-text-color;
+        background-color: $light-color;
+        border: 1px solid $light-color;
+        border-radius: 8px;
+    }
 }
