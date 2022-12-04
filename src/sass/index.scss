@@ -5,9 +5,9 @@
 @import './utils/mixins';
 
 // base
-@import './base/reset';
-@import './base/modern-normalize';
 @import './base/common';
+@import './base/reset';
+@import './base/container';
 
 // components
 @import './components/button';
@@ -16,13 +16,16 @@
 @import './components/modal-window';
 @import './components/socials-icon';
 @import './components/modal-contact';
+@import './components/modal-apartments';
+@import './components/modal-apartaments-download';
+@import './components/backdrop';
 
 // layout
-@import './layout/about-us';
-@import './layout/apartments';
-@import './layout/contacts';
-@import './layout/footer';
-@import './layout/gallery';
 @import './layout/header';
 @import './layout/hero';
+@import './layout/about-us';
+@import './layout/apartments';
 @import './layout/infrastructure';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';
