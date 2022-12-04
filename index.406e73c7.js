@@ -1,2 +1,0 @@
-!function(){var e={openModalBtn:document.querySelectorAll("[data-modal-apartments-open]"),closeModalBtn:document.querySelector("[data-modal-apartments-close]"),modal:document.querySelector("[data-modal-apartments]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.forEach((function(e){return e.addEventListener("click",t)})),e.closeModalBtn.addEventListener("click",t)}();
-//# sourceMappingURL=index.406e73c7.js.map
