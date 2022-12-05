@@ -132,11 +132,18 @@
   transition-duration: 100ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:active {
-    border: 1px solid $primary-text-color;
+  &:hover,
+  &:focus {
     color: $primary-text-color;
     background-color: $light-color;
+    border: 1px solid $primary-text-color;
   }
+
+  // &:active {
+  //   border: 1px solid $primary-text-color;
+  //   color: $primary-text-color;
+  //   background-color: $light-color;
+  // }
 
   @media screen and (min-width: 768px) {
     width: 264px;

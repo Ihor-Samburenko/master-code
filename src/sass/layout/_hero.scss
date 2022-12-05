@@ -88,10 +88,16 @@
   transition-duration: 100ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:active {
+  &:hover,
+  &:focus {
     color: $light-color;
     background-color: $primary-text-color;
   }
+
+  // &:active {
+  //   color: $light-color;
+  //   background-color: $primary-text-color;
+  // }
 
   @media screen and (min-width: 768px) {
     padding: 9px 62px;
