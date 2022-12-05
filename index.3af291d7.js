@@ -1,0 +1,2 @@
+const scrollBtn=document.querySelector(".scroll-wrapper__btn"),btnVisibility=()=>{window.scrollY>400?scrollBtn.style.visibility="visible":scrollBtn.style.visibility="hidden"};document.addEventListener("scroll",(()=>{window.scrollY>400?scrollBtn.style.visibility="visible":scrollBtn.style.visibility="hidden"})),scrollBtn.addEventListener("click",(()=>{window.scrollTo({top:0,behavior:"smooth"})}));
+//# sourceMappingURL=index.3af291d7.js.map
