@@ -1,0 +1,68 @@
+.scroll-wrapper__btn {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+
+        position: fixed;
+        z-index: 999;
+
+        bottom: 60px;
+        right: 10px;
+
+        width: 50px;
+        height: 50px;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: rgb(104, 90, 69);
+
+        animation: movebtn 3s ease-in-out infinite;
+        transition: all 0.5s ease-in-out;
+
+        visibility: hidden;
+
+        cursor: pointer;
+
+        &:hover {
+            animation: none;
+            outline: 10px solid rgba(126, 109, 83, 0.3);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 40px;
+        right: 10px;
+    }
+}
+
+.scroll-wrapper__icon {
+    width: 25px;
+    height: 25px;
+
+    fill: $white-color;
+}
+
+
+@keyframes movebtn {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
